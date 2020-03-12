@@ -7,13 +7,13 @@ pipeline{
 				sh 'npm install'
 			}
 		}
-/*		
-		stage('Build'){
+		
+		stage('Fix'){
 			steps{
-				sh 'npm run build'
+				sh 'npm audit fix'
 			}
 		}
-*/
+
 		stage('Start'){
 			steps{
 				sh 'npm start'
